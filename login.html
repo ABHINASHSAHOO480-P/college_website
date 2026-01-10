@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            font-family: Verdana;
+            box-sizing: border-box;
+        }
+
+        #loginbox {
+            padding: 40px;
+            width: 500px;
+            border-radius: 20px;
+            text-align: center;
+            color: rgb(61, 93, 255);
+            border: 2px solid rgb(61, 93, 255);
+            margin: 50px auto;
+        }
+
+        img {
+            padding: 10px;
+            border-radius: 50%;
+            width: 100px;
+        }
+
+        #loginform {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: rgb(61, 93, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="loginbox">
+    <h1>LOGIN</h1>
+
+    <img src="./pictures/vedic logo.jpg">
+
+    <div id="loginform">
+        <div class="row">
+            <label for="email">Email Id:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <button>Login</button>
+    </div>
+</div>
+
+</body>
+</html>
